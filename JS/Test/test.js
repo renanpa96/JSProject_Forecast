@@ -21,8 +21,10 @@ console.log(file);
 let combineData = [];
 let newCombineData = [];
 let jsonData = [];
-
+const novoCaminho = path.dirname("//DATA");
+// consolidatePath = path.join(targetDir, file);
 consolidatePath = path.join(targetDir, file);
+console.log(consolidatePath);
 let workBase = xlsx.readFile(consolidatePath, {
   type: "binary",
   cellText: false,
